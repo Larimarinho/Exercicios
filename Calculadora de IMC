@@ -1,0 +1,22 @@
+# Calculo de IMC 
+
+altura = float(input("Sua altura em metros: "))
+peso = float(input("Seu peso em kg: "))
+
+imc = peso / altura**2
+print(f'Seu IMC é: {imc:.2f}')
+
+if imc < 18.5:
+  print("Sua classificação de IMC é magreza")
+
+elif imc >= 18.5 and imc <= 24.9:
+  print("Sua classificação de IMC é normal")
+
+elif imc >= 25.0 and imc <= 29.9:
+  print("Sua classificação de IMC é de sobrepeso grau I")
+
+elif imc >= 30.0 and imc <= 39.9:
+  print("Sua classificação de IMC é de obesidade grau II")
+
+elif imc >= 40.0:
+  print("Sua classificação de IMC é de obesidade grave grau III")
